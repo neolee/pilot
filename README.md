@@ -67,6 +67,18 @@
 
 #### 附录
 
-1. [编程环境准备](x1-setup.md)
-2. [如何使用配套学生用书](x2-students-book.md)
+1. [编程环境配置指南](x1-setup.md)
+2. [如何使用配套学习用书](x2-students-book.md)
 3. [Git 与 GitHub 入门](x3-git-github.ipynb)
+
+#### 重要的附注
+
+由于 GitHub 的某些 bug，点击上面的这些链接打开 *notebook* 时可能会出现 `Sorry, something went wrong. Reload?` 的错误，这时可打开下面的链接，改用 Jupyter Notebook 官方提供的阅读器：
+
+> https://nbviewer.jupyter.org/github/neolee/pilot/tree/master/
+
+`ipynb` 后缀的文件就是 *notebook* 文件，文件名最开始的数字对应第几章（`a` 对应第十章，`b` 对应最终章，`x` 开头的则是附录）。
+
+比较推荐的学习方式是，用一个浏览器窗口打开上面列出的课程内容，同时在你自己机器的学生用书目录下运行 `jupyter lab`，并在学生用书的 *notebook* 下自己输入代码尝试。
+
+具体可参考这个[视频指引](https://www.bilibili.com/video/av71399509/)。
