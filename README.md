@@ -45,7 +45,7 @@
 
 万事开头难，一开始快速清障前进，后面就会越来越顺。
 
-在 [如何使用配套学习用书](x2-students-book.md) 指引中我们介绍了提问的方法，就是使用 GitHub 提供的 Issues 功能，只要访问我们课程教材的 [Issues 页面](https://github.com/neolee/pilot/issues)，点击右上的 `New` 按钮即可提出问题，记得选择 `question` 这个 *label*（如果提的是关于课程教材中的错误或者改进建议可以选择 `bug` 或者 `enhancement` 这样的 *label*）。
+可以使用 GitHub 提供的 Issues 功能来提问，只要访问 [这个页面](https://github.com/neolee/pilot/issues)，点击右上的 `New` 按钮即可提出问题，记得选择 `question` 这个 *label*（如果提的是关于课程教材中的错误或者改进建议可以选择 `bug` 或者 `enhancement` 这样的 *label*）。
 
 提问是有一些技巧的，经过思考的问题更容易快速得到靠谱的答案。
 
@@ -81,4 +81,18 @@
 
 比较推荐的学习方式是，用一个浏览器窗口打开上面列出的课程内容，同时在你自己机器的学生用书目录下运行 `jupyter lab`，并在学生用书的 *notebook* 下自己输入代码尝试。
 
-具体可参考这个[视频指引](https://www.bilibili.com/video/av71399509/)。
+具体可参考这个 [视频指引](https://www.bilibili.com/video/av71399509/)。
+
+## 问题与反馈
+
+如果在学习过程中遇到问题或者发现教材中的错误，可以通过 GitHub 的 Issues 系统提出，这个系统基本上就像一个问答论坛，但它集成了编程相关的能力，让它目的性更强、更容易跟踪问题解决的进度状态。
+
+访问我们课程教材的 Issues 页面：
+
+> [https://github.com/neolee/pilot/issues](https://github.com/neolee/pilot/issues)
+
+点击右上的 `New` 按钮来提出问题或者反馈，如果是问题请选择 `question` 这个 *label*，如果是关于教材中的错误或者改进建议可以选择 `bug` 或者 `enhancement` 这样的 *label*。
+
+遇到问题的时候其实也可以到这个页面去搜索一下，看看是不是有人提过，得到了怎样的答案；如果没人提过，那就正好可以由你来提出，所有人也都会从中获益。
+
+有些常见或者特别有价值的问题我们也会整理出来放到课程项目的 [Wiki](https://github.com/neolee/pilot/wiki) 中，方便大家查阅。
