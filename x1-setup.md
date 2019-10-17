@@ -88,7 +88,7 @@ scoop install busybox git python37
 * *git* 是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” [GitHub.com](https://github.com/) 就是建立在 *git* 基础之上的；
 * *python37* 这个包会安装 Python 3.7.x 完整的运行环境。
 
-> 目前 Python 3.8.0 已经正式发布，Scoop 上最新的 python 包就是 3.8.x 版本，但因为太新，还有不少第三方程序没有完全兼容，所以我们学习仍需要使用 3.7.x（目前最新是 3.7.5），所以指定 Scoop 安装 python37 这个包。
+> 目前 Python 3.8.0 已经正式发布，Scoop 上最新的 python 包就是 3.8.x 版本，但因为太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7.x（目前最新是 3.7.5）版本，所以指定 Scoop 安装 python37 这个包。
 
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
@@ -146,9 +146,9 @@ brew install git python ↩︎
 ```
 
 * *git* 是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” GitHub.com 就是建立在 *git* 基础之上的；
-* *python* 这个包就是最新版本的 Python 运行环境。
+* *python* 这个包会安装 Python 完整的运行环境。
 
-> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7.4 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，所以我们学习仍使用 3.7.4 就好，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
+> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7.4 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7.4 版本，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
 
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
