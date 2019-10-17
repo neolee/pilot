@@ -76,10 +76,17 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 如果运行无误，Scoop 就安装好了，我们可以运行 `scoop update` 然后 `scoop list` 来测试一下，因为目前还什么都没安装过，所以 `scoop list` 显示应该是空的。
 
-安装好 Scoop 之后我们建议立刻安装三个软件包，运行 `scoop install busybox git python ↩︎`：
+安装好 Scoop 之后我们建议立刻安装三个软件包，运行：
+
+```shell
+scoop install busybox git python37
+```
+
 * *busybox* 包括一系列常用的命令行命令，都是 Linux 和 macOS 下自带和经常使用的，安装这个包之后可以在 Windows 下使用和其他操作系统类似的命令；
 * *git* 是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” [GitHub.com](https://github.com/) 就是建立在 *git* 基础之上的；
-* *python* 这个包就是最新版本的 Python 运行环境。
+* *python37* 这个包会安装 Python 3.7.x 完整的运行环境。
+
+> 目前 Python 3.8.0 已经正式发布，Scoop 上最新的 python 包就是 3.8.x 版本，但因为太新，还有不少第三方程序没有完全兼容，所以我们学习仍需要使用 3.7.x（目前最新是 3.7.5），所以指定 Scoop 安装 python37 这个包。
 
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
@@ -128,9 +135,16 @@ macOS 本质上是 Unix，所以命令行界面是自带现成的，在 macOS �
 * 运行 Homebrew 自更新命令：`brew update ↩︎`
 * 运行 Homebrew 自检命令：`brew doctor ↩︎`
 
-如果上面的命令没有错误，Homebrew 就安装好了，我们建议立刻安装两个软件包，运行 `brew install git python ↩︎`：
+如果上面的命令没有错误，Homebrew 就安装好了，我们建议立刻安装两个软件包，运行：
+
+```shell
+brew install git python ↩︎
+```
+
 * *git* 是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” GitHub.com 就是建立在 *git* 基础之上的；
 * *python* 这个包就是最新版本的 Python 运行环境。
+
+> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7.4 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，所以我们学习仍使用 3.7.4 就好，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
 
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
