@@ -34,7 +34,9 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 * 在命令行界面输入 `powershell ↩︎`，注意到命令行界面的行首提示信息出现了 `PS` 字样；
 * 在命令行界面输入 `$PSVersionTable.PSVersion.Major ↩︎`。
 
-上面的命令返回为 5 以上就没问题，否则需要下载并安装 [Windows Management Framework 5.x](https://aka.ms/wmf5download)。
+上面的命令返回为 5 以上就没问题，否则需要下载并安装：
+1. [.NET Framework 4.5 or later](https://www.microsoft.com/net/download)
+2. [Windows Management Framework 5.x](https://aka.ms/wmf5download)
 
 以上确认完毕可以在命令行界面输入 `exit ↩︎` 退出。
 
