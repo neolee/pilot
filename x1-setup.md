@@ -81,6 +81,8 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 安装好 Scoop 之后我们建议立刻安装三个软件包，运行：
 
 ```shell
+scoop update
+scoop bucket add versions 
 scoop install busybox git python37
 ```
 
