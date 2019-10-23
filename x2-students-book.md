@@ -34,7 +34,7 @@
 因为学习用书都是用 Jupyter Notebook 写就的，要使用就需要安装 Jupyter Lab 环境，在我们已经装好 Python 的前提下这很容易，只要在命令行界面运行下面的命令就可以了：
 
 ```shell
-pip install -U pip
+python -m pip install --upgrade pip
 pip install jupyterlab
 ```
 
