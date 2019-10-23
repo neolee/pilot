@@ -13,7 +13,7 @@
 
 ## Windows 篇
 
-* [视频指引](https://www.bilibili.com/video/av62640239/)
+* [视频指引](https://www.bilibili.com/video/av73160593/)
 
 > 重要提示：具体操作请以下面的文字说明为准，视频指引仅供参考。
 
