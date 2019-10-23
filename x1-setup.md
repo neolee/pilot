@@ -139,10 +139,11 @@ macOS 本质上是 Unix，所以命令行界面是自带现成的，在 macOS �
 下面的操作就在上一步打开的 Terminal 命令行界面下运行：
 
 * 输入：`xcode-select --install ↩︎` 这个命令会安装 Apple 开发工具包，是 Homebrew 需要的；
-* 输入：`sudo xcodebuild -license accept ↩︎` 这个命令的作用是阅读和同意 Xcode 的授权协议；当提示输入 `Password:` 的时候输入你的登录密码并回车（下同）；
-* 输入：`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ↩︎` 这个命令将自动安装 Homebrew 到 /usr/local/ 目录下；
+* 输入：`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ↩︎` 这个命令将自动安装 Homebrew 到 /usr/local/ 目录下；注意提示 `Password:` 的时候输入你的登录密码并回车；
 * 运行 Homebrew 自更新命令：`brew update ↩︎`
 * 运行 Homebrew 自检命令：`brew doctor ↩︎`
+
+> 如果曾经从 App Store 下载安装过完整的 Xcode，需要你启动 Xcode 并且完成初始化（安装命令行工具、接受用户授权协议等），看到 Xcode 的欢迎窗口就可以了。
 
 如果上面的命令没有错误，Homebrew 就安装好了，我们建议立刻安装两个软件包，运行：
 
