@@ -40,6 +40,8 @@ pip install jupyterlab
 
 `pip` 是 Python 自己的软件包管理工具，它负责安装、删除和管理 Python 浩若烟海的第三方代码库，我们以后会经常用到。上面第一行是更新 `pip` 自己，因为我们刚装好 Python，通常需要更新一下 `pip` 自己；第二行则是让 `pip` 安装 Jupyter Lab 以及所有依赖支持包。
 
+> 如果在运行 `pip` 时报错说找不到、不认识 `pip` 命令，可尝试将 `pip` 换成 `pip3`，即运行 `pip3 install -U pip` 和 `pip3 install jupyterlab`。
+
 上述命令运行完之后 Jupyter Lab 就装好了，在克隆好的目录里运行 `jupyter lab ↩︎` 来启动 Jupyter Lab 的服务程序，并打开一个浏览器页面，里面列出了学习用书里的所有 *notebook*（.ipynb 后缀名的文件），双击就能打开了。
 
 ### 使用学习用书
