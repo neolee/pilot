@@ -75,7 +75,7 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 * 输入 `Get-ExecutionPolicy ↩︎` 一般来说系统应该返回 `Restricted`；
 * 输入 `Set-ExecutionPolicy RemoteSigned -scope CurrentUser ↩︎`；
-* 输入 `iex (new-object net.webclient).downloadstring('https://get.scoop.sh') ↩︎`
+* 输入 `iwr -useb get.scoop.sh | iex ↩︎`
 * 等待上述安装程序运行完毕，如果中间有报错可以把错误提示截屏或者拷贝保存下。
 
 如果运行无误，Scoop 就安装好了，我们可以运行 `scoop update` 然后 `scoop list` 来测试一下，因为目前还什么都没安装过，所以 `scoop list` 显示应该是空的。
