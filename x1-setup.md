@@ -78,25 +78,32 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 * 输入 `iwr -useb get.scoop.sh | iex ↩︎`
 * 等待上述安装程序运行完毕，如果中间有报错可以把错误提示截屏或者拷贝保存下。
 
-如果运行无误，Scoop 就安装好了，我们可以运行 `scoop update` 然后 `scoop list` 来测试一下，因为目前还什么都没安装过，所以 `scoop list` 显示应该是空的。
+如果运行无误，Scoop 就安装好了，我们可以运行这几个命令来测试下：
+```shell
+scoop list
+scoop install git
+scoop update
+```
 
-安装好 Scoop 之后我们建议立刻安装三个软件包，运行：
+第一个命令会列出已安装的软件包，你的列表目前应该是空的。
+
+第二个命令会安装非常重要的 *git* 软件包，这是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” [GitHub.com](https://github.com/) 就是建立在 *git* 基础之上的。
+
+> 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
+
+第三个命令会更新 Scoop 的本地数据库。
+ 
+如果一切无误，我们就可以着手安装 Python 了，运行：
 
 ```shell
 scoop bucket add versions
 scoop update
-scoop install busybox git python37
+scoop install python37@3.7.4
 ```
 
-* *busybox* 包括一系列常用的命令行命令，都是 Linux 和 macOS 下自带和经常使用的，安装这个包之后可以在 Windows 下使用和其他操作系统类似的命令；
-* *git* 是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” [GitHub.com](https://github.com/) 就是建立在 *git* 基础之上的；
-* *python37* 这个包会安装 Python 3.7.x 完整的运行环境。
+> 目前 Python 3.8.0 已经正式发布，Scoop 上最新的 python 包就是 3.8.x 版本，但因为太新，一些我们会用到的第三方程序没有完全兼容，所以目前仍需使用 3.7.x（这里推荐使用课程本身开发时的 3.7.4 版本）。
 
-> 目前 Python 3.8.0 已经正式发布，Scoop 上最新的 python 包就是 3.8.x 版本，但因为太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7.x（目前最新是 3.7.5）版本，所以指定 Scoop 安装 python37 这个包。
-
-> 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
-
-上述安装命令运行完毕之后可以再次运行 `scoop list`，应会列出已经安装好的这三个软件包。我们还可以输入 `python -V` 来查看安装的 Python 的版本。
+上述安装命令运行完毕之后可以再次运行 `scoop list`，应会列出已经安装好的几个软件包。我们还可以输入 `python -V` 来查看安装的 Python 的版本（应该是 3.7.4）。
 
 ### 安装 Visual Studio Code
 
