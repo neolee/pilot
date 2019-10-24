@@ -79,7 +79,7 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 * 等待上述安装程序运行完毕，如果中间有报错可以把错误提示截屏或者拷贝保存下。
 
 如果运行无误，Scoop 就安装好了，我们可以运行这几个命令来测试下：
-```shell
+```powershell
 scoop list
 scoop install git
 scoop update
@@ -95,7 +95,7 @@ scoop update
  
 如果一切无误，我们就可以着手安装 Python 了，运行：
 
-```shell
+```powershell
 scoop bucket add versions
 scoop update
 scoop install python37@3.7.4
@@ -104,6 +104,24 @@ scoop install python37@3.7.4
 > 目前 Python 3.8.0 已经正式发布，Scoop 上最新的 python 包就是 3.8.x 版本，但因为太新，一些我们会用到的第三方程序没有完全兼容，所以目前仍需使用 3.7.x（这里推荐使用课程本身开发时的 3.7.4 版本）。
 
 上述安装命令运行完毕之后可以再次运行 `scoop list`，应会列出已经安装好的几个软件包。我们还可以输入 `python -V` 来查看安装的 Python 的版本（应该是 3.7.4）。
+
+#### Scoop 相关问题的排错
+
+这个过程中如果遇到问题，可以运行 `scoop checkup`，这个命令会让 Scoop 进行自检，给出自己发现的问题和建议解决方案，一般按它说的做就没错，比如在某些系统上它会建议你执行两个命令：
+
+```powershell
+Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+scoop install innounp dark
+```
+
+尤其是第一行命令，在一些系统上是很多问题的根源，遇到问题可以试试先运行它。
+
+另外可以运行 `scoop list` 来检查你已经安装过的软件包，其中如果有标记 `*failed*` 的，就是安装失败的软件包，可以用下面的命令来重装（`xxxx` 是有问题的软件包的完整名字）：
+
+```powershell
+scoop uninstall xxxx
+scoop install xxxx
+```
 
 ### 安装 Visual Studio Code
 
