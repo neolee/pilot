@@ -44,6 +44,10 @@ pip install jupyterlab
 
 上述命令运行完之后 Jupyter Lab 就装好了，在克隆好的目录里运行 `jupyter lab ↩︎` 来启动 Jupyter Lab 的服务程序，并打开一个浏览器页面，里面列出了学习用书里的所有 *notebook*（.ipynb 后缀名的文件），双击就能打开了。
 
+> 注意，运行 `jupyter lab` 的命令行窗口必须保持着，你才能继续在浏览器里使用 Jupyter Lab；如果你用完了，需要退出，在这个命令行窗口按 Control+C 组合键，就会停止 Jupyter Lab 服务，回到命令行交互界面。一般来说不要在 `jupyter lab` 运行时关闭那个窗口。
+> 
+> 如果在 `jupyter lab` 运行着的时候你需要命令行界面执行一些任务，只要在 ConEmu 里打开一个新的 tab 就可以了，不用动之前的那个。
+
 ### 使用学习用书
 
 现在你可以在 Jupyter Lab 中打开 *notebook*，在代码 *cell* 中输入 Python 代码并运行，每学完一章，对应的学习用书中的 *notebook* 也应该经你亲手补完，你当然还可以在 *notebook* 中加入自己的想法，测试自己想到的程序代码等等，总之只要你想做的都可以做，做完之后保存 *notebook*，你的成果就被记录下来了，然后你可以：
