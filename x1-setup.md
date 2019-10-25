@@ -105,6 +105,12 @@ scoop install python37@3.7.4
 
 上述安装命令运行完毕之后可以再次运行 `scoop list`，应会列出已经安装好的几个软件包。我们还可以输入 `python -V` 来查看安装的 Python 的版本（应该是 3.7.4）。
 
+另外有个常用的工具包叫 `busybox`，里面包含了大量 Unix、Linux、macOS 系统里常用的命令，让我们在 Windows 下也能使用这些命令，推荐安装：
+
+```powershell
+scoop install busybox
+```
+
 #### Scoop 相关问题的排错
 
 这个过程中如果遇到问题，可以运行 `scoop checkup`，这个命令会让 Scoop 进行自检，给出自己发现的问题和建议解决方案，一般按它说的做就没错，比如在某些系统上它会建议你执行两个命令：
