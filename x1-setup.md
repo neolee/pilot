@@ -92,6 +92,8 @@ scoop update
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
 第三个命令会更新 Scoop 的本地数据库。
+
+### 安装 Python
  
 如果一切无误，我们就可以着手安装 Python 了，运行：
 
@@ -111,7 +113,7 @@ scoop install python37@3.7.4
 scoop install busybox
 ```
 
-#### Scoop 相关问题的排错
+### Scoop 相关问题的排错
 
 这个过程中如果遇到问题，可以运行 `scoop checkup`，这个命令会让 Scoop 进行自检，给出自己发现的问题和建议解决方案，一般按它说的做就没错，比如在某些系统上它会建议你执行两个命令：
 
