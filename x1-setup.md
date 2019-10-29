@@ -44,7 +44,7 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 我们刚才已经用了 Windows 自带的命令行界面 `cmd.exe`（大名叫 Command Prompt），为啥还要另外装一个呢？因为这个更方便好用，可以减少不少以后的麻烦。
 
-* 进入 [ConEmu 首页](https://conemu.github.io/)，点击 Download 按钮，选择下载 “ConEmu Alpha, Installer (32-bit, 64-bit)” 这个安装器版本；
+* 进入 [ConEmu 首页](https://conemu.github.io/)，点击 Download 按钮，选择下载页面中最新的 “Installer (32-bit, 64-bit)” 安装器版本（一般是 Alpha 版本，有时候没有新的 Alpha 版本那就是 Preview 版本）；
 * 运行下载好的 ConEmu 安装程序（通常叫 `ConEmuSetup.xxxxx.exe`），如果前面检查的 Windows 版本为 64 位就选择安装 x64（64位）版本，否则选择 x86（32位）版本；安装时有的防病毒软件可能会报出病毒警告，请放心继续安装，这是[误报](https://conemu.github.io/en/FalseAlarms.html)。
 
 安装完毕运行 ConEmu，应该可以看到下面这样的界面：
