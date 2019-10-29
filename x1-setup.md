@@ -44,7 +44,7 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 我们刚才已经用了 Windows 自带的命令行界面 `cmd.exe`（大名叫 Command Prompt），为啥还要另外装一个呢？因为这个更方便好用，可以减少不少以后的麻烦。
 
-* 进入 [ConEmu 首页](https://conemu.github.io/)，点击 Download 按钮，选择下载 “ConEmu Alpha, Installer (32-bit, 64-bit)” 这个安装器版本；
+* 进入 [ConEmu 首页](https://conemu.github.io/)，点击 Download 按钮，选择下载页面中最新的 “Installer (32-bit, 64-bit)” 安装器版本（一般是 Alpha 版本，有时候没有新的 Alpha 版本那就是 Preview 版本）；
 * 运行下载好的 ConEmu 安装程序（通常叫 `ConEmuSetup.xxxxx.exe`），如果前面检查的 Windows 版本为 64 位就选择安装 x64（64位）版本，否则选择 x86（32位）版本；安装时有的防病毒软件可能会报出病毒警告，请放心继续安装，这是[误报](https://conemu.github.io/en/FalseAlarms.html)。
 
 安装完毕运行 ConEmu，应该可以看到下面这样的界面：
@@ -71,27 +71,37 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 在我们的编程生涯中会用到很多命令行软件，安装、卸载、更新和管理这些软件最简单的办法就是使用一个好用的软件包管理工具，Windows 下最好的命令行软件包管理工具就是 [Scoop](https://scoop.sh/)。
 
-下面的操作就在上一步打开的 ConEmu 的 PowerShell 命令行界面下运行：
+下面的操作就在上一步打开的 ConEmu 的 PowerShell 命令行界面下运行。
 
-* 输入 `Get-ExecutionPolicy ↩︎` 一般来说系统应该返回 `Restricted`；
-* 输入 `Set-ExecutionPolicy RemoteSigned -scope CurrentUser ↩︎`；
+首先，安装 Scoop 需要一定的权限，通过下面两行命令来查看目前我们的权限，以及获取我们需要的权限：
+
+* 输入 `Get-ExecutionPolicy ↩︎` 如果系统返回 `RemoteSigned` 则可以略过下面一步直接继续，否则——
+* 输入 `Set-ExecutionPolicy RemoteSigned -scope CurrentUser ↩︎`
+
+如上，将 *execution policy* 设置为 `RemoteSigned` 之后，就可以运行 Scoop 的安装命令了：
+
 * 输入 `iwr -useb get.scoop.sh | iex ↩︎`
-* 等待上述安装程序运行完毕，如果中间有报错可以把错误提示截屏或者拷贝保存下。
 
-如果运行无误，Scoop 就安装好了，我们可以运行这几个命令来测试下：
+这个命令会下载 Scoop 的安装脚本并执行，过程中会从几个不同的服务器下载安装一些软件，并对你的系统进行一系列配置。等待上述安装脚本执行完毕，如果中间有报错可以把错误提示截屏或者拷贝保存下。
+
+如果运行无误，Scoop 就安装好了，我们接着运行下面这几个命令：
 ```powershell
 scoop list
 scoop install git
 scoop update
 ```
 
-第一个命令会列出已安装的软件包，你的列表目前应该是空的。
+第一个命令会列出已安装的软件包。
 
 第二个命令会安装非常重要的 *git* 软件包，这是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” [GitHub.com](https://github.com/) 就是建立在 *git* 基础之上的。
 
+第三个命令会更新 Scoop 的本地数据库。
+
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
-第三个命令会更新 Scoop 的本地数据库。
+如果运行这三个命令出现问题（通常红字代表有错误发生），可以参考后面的 **Scoop 相关排错** 一节。
+
+### 安装 Python
  
 如果一切无误，我们就可以着手安装 Python 了，运行：
 
@@ -105,7 +115,13 @@ scoop install python37@3.7.4
 
 上述安装命令运行完毕之后可以再次运行 `scoop list`，应会列出已经安装好的几个软件包。我们还可以输入 `python -V` 来查看安装的 Python 的版本（应该是 3.7.4）。
 
-#### Scoop 相关问题的排错
+另外有个常用的工具包叫 `busybox`，里面包含了大量 Unix、Linux、macOS 系统里常用的命令，让我们在 Windows 下也能使用这些命令，推荐安装：
+
+```powershell
+scoop install busybox
+```
+
+### Scoop 相关排错
 
 这个过程中如果遇到问题，可以运行 `scoop checkup`，这个命令会让 Scoop 进行自检，给出自己发现的问题和建议解决方案，一般按它说的做就没错，比如在某些系统上它会建议你执行两个命令：
 
@@ -163,8 +179,11 @@ macOS 本质上是 Unix，所以命令行界面是自带现成的，在 macOS �
 
 下面的操作就在上一步打开的 Terminal 命令行界面下运行：
 
-* 输入：`xcode-select --install ↩︎` 这个命令会安装 Apple 开发工具包，是 Homebrew 需要的；
-* 输入：`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ↩︎` 这个命令将自动安装 Homebrew 到 /usr/local/ 目录下；注意提示 `Password:` 的时候输入你的登录密码并回车；
+* 输入：`xcode-select --install ↩︎` 这个命令会安装 Apple 开发工具包，是 Homebrew 需要的
+* 输入：`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ↩︎` 
+
+这个命令将下载并执行 Homebrew 的安装脚本，自动安装 Homebrew 到 /usr/local/ 目录下；注意提示 `Password:` 的时候输入你的登录密码并回车。
+
 * 运行 Homebrew 自更新命令：`brew update ↩︎`
 * 运行 Homebrew 自检命令：`brew doctor ↩︎`
 
@@ -179,9 +198,9 @@ brew install git python ↩︎
 * *git* 是用于文件版本管理和协同的重要工具，大名鼎鼎的“程序员交友社区” GitHub.com 就是建立在 *git* 基础之上的；
 * *python* 这个包会安装 Python 完整的运行环境。
 
-> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7.4 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7.4 版本，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
-
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
+
+> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7.4 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7.4 版本，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
 
 上述安装命令运行完毕之后可以运行 `brew list`，应会列出已经安装好的这两个软件包以及所有自动安装的依赖包。我们还可以输入 `python3 -V` 来查看新安装的 Python 的版本。
 
