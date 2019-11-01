@@ -42,7 +42,19 @@ pip install jupyterlab
 
 > 如果在运行上面第二个命令时报错说找不到、不认识 `pip` 命令，可尝试将 `pip` 换成 `pip3`，即运行 `pip3 install jupyterlab`。
 
-上述命令运行完之后 Jupyter Lab 就装好了，在克隆好的目录里运行 `jupyter lab ↩︎` 来启动 Jupyter Lab 的服务程序，并打开一个浏览器页面，里面列出了学习用书里的所有 *notebook*（.ipynb 后缀名的文件），双击就能打开了。
+某些环境下运行 Jupyter Lab 需要 nodejs，所以建议也安装好。如果是 Winidows 系统，执行：
+
+```powershell
+scoop install nodejs
+```
+
+macOS 系统则执行：
+
+```shell
+brew install node
+```
+
+上述操作都成功后 Jupyter Lab 就准备就绪了，在你克隆好的学习用书目录里运行 `jupyter lab ↩︎` 来启动 Jupyter Lab 的服务程序，并打开一个浏览器页面，里面列出了学习用书里的所有 *notebook*（.ipynb 后缀名的文件），双击就能打开了。
 
 > 注意，运行 `jupyter lab` 的命令行窗口必须保持着，你才能继续在浏览器里使用 Jupyter Lab；如果你用完了，需要退出，在这个命令行窗口按 Control+C 组合键，就会停止 Jupyter Lab 服务，回到命令行交互界面。一般来说不要在 `jupyter lab` 运行时关闭那个窗口。
 > 
