@@ -65,17 +65,32 @@
 * [第八章 理解对象与类：概念篇](p1-8-oo-2.ipynb)
 * [第九章 理解对象与类：Python 篇](p1-9-oo-3.ipynb)
 * [第十章 字符与字符串](p1-a-string.ipynb)
-* [最终章 课程练习](p1-b-final.ipynb)
+* [最十一章 课程练习](p1-b-final.ipynb)
 
 #### 第二部分 进阶篇
 
-* 
+* [第一章 函数定义再探](p2-1-function-def.ipynb)
+* [第二章 程序中的文档](p2-2-docstrings.ipynb)
+* [第三章 模块](p2-3-modules.ipynb)
+* [第四章 递归](p2-4-recursion.ipynb)
+* [第五章 函数也是数据：初级篇](p2-5-functional-1.ipynb)
+* [第六章 字符串数据](p2-6-string-data.ipynb)
+* [第七章 Iterable 与 Iterator](p2-7-iterable-iterator.ipynb)
+* [第八章 列表](p2-8-list.ipynb)
+* [第九章 元组，集合，字典](p2-9-tuple-set-dict.ipynb)
+* [第十章 树](p2-a-tree.ipynb)
+* [第十一章 有限状态机](p2-b-fsm.ipynb)
+* [第十二章 数据和数据库](p2-c-database.ipynb)
+* [第十三章 函数也是数据：进阶篇](p2-d-functional-2.ipynb)
 
 #### 附录
 
 1. [编程环境配置指南](x1-setup.md)
 2. [如何使用配套学习用书](x2-students-book.md)
 3. [Git 与 GitHub 入门](x3-git-github.ipynb)
+4. [正则表达式入门](x4-regex.ipynb)
+5. [MySQL 配置指南](x5-mysql-setup.ipynb)
+6. [Redis 配置指南](x6-redis-setup.ipynb)
 
 #### 重要的附注
 
