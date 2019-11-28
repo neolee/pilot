@@ -23,7 +23,7 @@
 在这个新的 *repo* 的首页上有个绿色的 *Clone or download* 按钮，点击它会打开一个小的下拉显示，里面有个文本框写有这个 *repo* 的访问地址，点击它右边的小按钮将其拷贝到系统剪贴板（后面会用）。
 
 第二步，现在要把属于你的这个分叉 *repo* 克隆到你自己的机器本地来，由于你顺利完成了[环境准备](x1-setup.md)，你的机器上已经有完善的命令行界面和软件包管理工具，还装好了 *git*，现在可以打开命令行界面进行如下操作：
-* 输入 `cd Code ↩︎` 进入我们之间创建的子目录（如果还没有建立，可以用 `mkdir Code ↩︎` 来创建）；
+* 输入 `cd Code ↩︎` 进入我们之前创建的子目录（如果还没有建立，可以用 `mkdir Code ↩︎` 来创建）；
 * 输入 `git clone `，在最后有个空格，在空格后粘贴你前面拷贝的，你 *fork* 的 *repo* 的地址，然后输入回车 `↩︎`；
 * 输入 `cd pilot-student ↩︎` 进入克隆好的目录中。
 
@@ -42,7 +42,19 @@ pip install jupyterlab
 
 > 如果在运行上面第二个命令时报错说找不到、不认识 `pip` 命令，可尝试将 `pip` 换成 `pip3`，即运行 `pip3 install jupyterlab`。
 
-上述命令运行完之后 Jupyter Lab 就装好了，在克隆好的目录里运行 `jupyter lab ↩︎` 来启动 Jupyter Lab 的服务程序，并打开一个浏览器页面，里面列出了学习用书里的所有 *notebook*（.ipynb 后缀名的文件），双击就能打开了。
+某些环境下运行 Jupyter Lab 需要 nodejs，所以建议也安装好。如果是 Winidows 系统，执行：
+
+```powershell
+scoop install nodejs
+```
+
+macOS 系统则执行：
+
+```shell
+brew install node
+```
+
+上述操作都成功后 Jupyter Lab 就准备就绪了，在你克隆好的学习用书目录里运行 `jupyter lab ↩︎` 来启动 Jupyter Lab 的服务程序，并打开一个浏览器页面，里面列出了学习用书里的所有 *notebook*（.ipynb 后缀名的文件），双击就能打开了。
 
 > 注意，运行 `jupyter lab` 的命令行窗口必须保持着，你才能继续在浏览器里使用 Jupyter Lab；如果你用完了，需要退出，在这个命令行窗口按 Control+C 组合键，就会停止 Jupyter Lab 服务，回到命令行交互界面。一般来说不要在 `jupyter lab` 运行时关闭那个窗口。
 > 
