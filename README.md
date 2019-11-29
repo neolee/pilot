@@ -1,6 +1,8 @@
 # 进入编程世界的第一课
 
-> 没有自学能力的人没有未来  
+## 更新
+
+第二阶段课程（S2）已发布， 请阅读 [对 S2 课程的说明](README-S2.md)。
 
 ## 前言
 
@@ -16,7 +18,7 @@
 
 #### 听课
 
-这部分以讲解原理和思维方法为主，重点在学习“学习的方法（*learn to learn*）”和“如何解决问题（*problem solving*）”。
+这部分以讲解原理和思维方法为主，重点在“学会学习的方法（*learning to learn*）”和“问题解决的方法（*problem solving*）”。
 
 课程的讲解大致上每周一次，在课程讲解的最后会给大家布置自学任务，就是下面这个环节。
 
@@ -53,23 +55,44 @@
 
 ## 课程大纲
 
-* [第一章 理解编程语言](1-understanding-programming-languages.ipynb)
-* [第二章 程序的基本结构（一）：值与变量](2-structure-1.ipynb)
-* [第三章 程序的基本结构（二）：操作符与函数](3-structure-2.ipynb)
-* [第四章 程序的基本结构（三）：逻辑判断与分支](4-structure-3.ipynb)
-* [第五章 程序的基本结构（四）：循环](5-structure-4.ipynb)
-* [第六章 程序的基本结构（五）：异常处理](6-structure-5.ipynb)
-* [第七章 理解对象与类：起源篇](7-oo-1.ipynb)
-* [第八章 理解对象与类：概念篇](8-oo-2.ipynb)
-* [第九章 理解对象与类：Python 篇](9-oo-3.ipynb)
-* [第十章 字符与字符串](a-string.ipynb)
-* [最终章 课程练习](b-final.ipynb)
+#### 第一部分 基础篇
+
+* [第一章 理解编程语言](p1-1-understanding-programming-languages.ipynb)
+* [第二章 程序的基本结构（一）：值与变量](p1-2-structure-1.ipynb)
+* [第三章 程序的基本结构（二）：操作符与函数](p1-3-structure-2.ipynb)
+* [第四章 程序的基本结构（三）：逻辑判断与分支](p1-4-structure-3.ipynb)
+* [第五章 程序的基本结构（四）：循环](p1-5-structure-4.ipynb)
+* [第六章 程序的基本结构（五）：异常处理](p1-6-structure-5.ipynb)
+* [第七章 理解对象与类：起源篇](p1-7-oo-1.ipynb)
+* [第八章 理解对象与类：概念篇](p1-8-oo-2.ipynb)
+* [第九章 理解对象与类：Python 篇](p1-9-oo-3.ipynb)
+* [第十章 字符与字符串](p1-a-string.ipynb)
+* [最十一章 课程练习](p1-b-final.ipynb)
+
+#### 第二部分 进阶篇
+
+* [第一章 函数定义再探](p2-1-function-def.ipynb)
+* [第二章 程序中的文档](p2-2-docstrings.ipynb)
+* [第三章 模块](p2-3-modules.ipynb)
+* [第四章 递归](p2-4-recursion.ipynb)
+* [第五章 函数也是数据：初级篇](p2-5-functional-1.ipynb)
+* [第六章 字符串数据](p2-6-string-data.ipynb)
+* [第七章 Iterable 与 Iterator](p2-7-iterable-iterator.ipynb)
+* [第八章 列表](p2-8-list.ipynb)
+* [第九章 元组，集合，字典](p2-9-tuple-set-dict.ipynb)
+* [第十章 树](p2-a-tree.ipynb)
+* [第十一章 有限状态机](p2-b-fsm.ipynb)
+* [第十二章 数据和数据库](p2-c-database.ipynb)
+* [第十三章 函数也是数据：进阶篇](p2-d-functional-2.ipynb)
 
 #### 附录
 
 1. [编程环境配置指南](x1-setup.md)
 2. [如何使用配套学习用书](x2-students-book.md)
 3. [Git 与 GitHub 入门](x3-git-github.ipynb)
+4. [正则表达式入门](x4-regex.ipynb)
+5. [MySQL 配置指南](x5-mysql-setup.ipynb)
+6. [Redis 配置指南](x6-redis-setup.ipynb)
 
 #### 重要的附注
 
