@@ -33,3 +33,5 @@
 > 之前已经 fork & clone [学习用书](https://github.com/neolee/pilot-student) 的话，需要按照 [GitHub 官方指南](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork) 来完成你的 repo 和新版学习用书之间的同步。
 > 
 > 这个过程虽然不难，但也有点麻烦，如果实在弄不好，其实把之前你用的本地学习用书备份一下，然后删掉原本的 fork，再重新 fork & clone 新的学习用书就可以了。反正“描红本”描完就扔也没问题。
+> 
+> **更新**：感谢 [zhipingyang120](https://github.com/zhipingyang120) 同学写了一篇中文的 step-by-step 的 [学习用书更新同步指南](https://github.com/neolee/pilot/issues/651)，可以参考。
