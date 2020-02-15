@@ -121,7 +121,7 @@ scoop install python37@3.7.4
 scoop install busybox
 ```
 
-### Scoop 相关排错
+### Scoop 相关疑难
 
 这个过程中如果遇到问题，可以运行 `scoop checkup`，这个命令会让 Scoop 进行自检，给出自己发现的问题和建议解决方案，一般按它说的做就没错，比如在某些系统上它会建议你执行两个命令：
 
