@@ -204,6 +204,13 @@ brew install git python ↩︎
 
 上述安装命令运行完毕之后可以运行 `brew list`，应会列出已经安装好的这两个软件包以及所有自动安装的依赖包。我们还可以输入 `python3 -V` 来查看新安装的 Python 的版本。
 
+> 在某些 macOS 系统中会内置一个老的 Python 2.7 的环境，而 `python` 命令会指向这个老的 Python 环境，这会给我们以后的操作带来不少麻烦，可以执行下面的命令来强制让 `python` 指向我们安装的 Python 3 的环境：
+
+```shell
+rm /usr/local/bin/python
+ln -s /usr/local/bin/python3 /usr/local/bin/python
+```
+
 ### 安装 Visual Studio Code
 
 Visual Studio Code 是微软开发并开源的给程序员用的文本编辑器（以下简称 VSCode），VSCode 集成了对各种编程语言和工具的支持，我们写程序代码和文档都可以用它。
