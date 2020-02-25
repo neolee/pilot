@@ -87,7 +87,7 @@ brew install node
 
 > [https://github.com/neolee/pilot/issues](https://github.com/neolee/pilot/issues)
 
-点击右上的 `New` 按钮来提出问题或者反馈，如果是问题请选择 `question` 这个 *label*，如果是关于教材中的错误或者改进建议可以选择 `bug` 或者 `enhancement` 这样的 *label*。
+点击右上的 `New` 按钮来提出问题或者反馈。
 
 遇到问题的时候其实也可以到这个页面去搜索一下，看看是不是有人提过，得到了怎样的答案；如果没人提过，那就正好可以由你来提出，所有人也都会从中获益。
 
