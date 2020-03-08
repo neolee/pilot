@@ -216,7 +216,7 @@ ln -s /usr/local/bin/python3 /usr/local/bin/python
 Visual Studio Code 是微软开发并开源的给程序员用的文本编辑器（以下简称 VSCode），VSCode 集成了对各种编程语言和工具的支持，我们写程序代码和文档都可以用它。
 
 * 访问 [Visual Studio Code](https://code.visualstudio.com/) 主页并点击下载按钮，下载时注意看清楚是和自己的操作系统一致（macOS）的版本；
-* 解压下载文件（通常叫 `VSCode-darwin-stable.zip`）会得到 VSCode 应用程序，将其拖到 Applications 目录即可。
+* 解压下载文件（通常叫 `VSCode-darwin-stable.zip`）会得到 VSCode 应用程序，将其移动（拖到） Applications 目录即可。
 
 按 ⌘+空格 键调出 Spotlight，输入 `code` 应该可以看到 Visual Studio Code 出现在第一选项，回车即可运行 VSCode。
 
