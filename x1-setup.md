@@ -189,7 +189,9 @@ macOS 本质上是 Unix，所以命令行界面是自带现成的，在 macOS �
 
 > 如果曾经从 App Store 下载安装过完整的 Xcode，需要你启动 Xcode 并且完成初始化（安装命令行工具、接受用户授权协议等），看到 Xcode 的欢迎窗口就可以了。
 
-如果上面的命令没有错误，Homebrew 就安装好了，我们建议立刻安装两个软件包，运行：
+### 安装 Python
+
+如果前面的操作没有错误，Homebrew 就安装好了，我们建议立刻安装两个软件包，运行：
 
 ```shell
 brew install git python ↩︎
@@ -200,7 +202,7 @@ brew install git python ↩︎
 
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
-> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7.4 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7.4 版本，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
+> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7 版本，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
 
 上述安装命令运行完毕之后可以运行 `brew list`，应会列出已经安装好的这两个软件包以及所有自动安装的依赖包。我们还可以输入 `python3 -V` 来查看新安装的 Python 的版本。
 
