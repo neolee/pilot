@@ -60,6 +60,10 @@ brew install node
 > 
 > 如果在 `jupyter lab` 运行着的时候你需要命令行界面执行一些任务，只要在 ConEmu 里打开一个新的 tab 就可以了，不用动之前的那个。
 
+> **关于浏览器的说明**：Jupyter Lab 不支持 Internet Explorer 11 以及之前的所有版本（简称 IE），这些浏览器是 Windows 的古老遗产，也是所有前端开发者的噩梦。如果你的 Windows 以 IE 作为缺省浏览器，那么执行 `jupyter lab ↩︎` 打开的页面会是一片空白。解决方案就是换用其他更新一些的浏览器，比如 Windows 自带的 Edge，或者程序员首选的 Chrome 和 Firefox 的最新版本，具体操作可以从下面两方法中任选其一：
+> 1. 在 Windows 的系统设置中找到缺省应用设置（Default apps），修改 Web 浏览器的设置；
+> 2. 手动打开 Chrome 一类的浏览器，然后把命令行界面里 `http://localhost:8888/?token=...` 那一整行地址拷贝进去打开。
+
 ### 使用学习用书
 
 现在你可以在 Jupyter Lab 中打开 *notebook*，在代码 *cell* 中输入 Python 代码并运行，每学完一章，对应的学习用书中的 *notebook* 也应该经你亲手补完，你当然还可以在 *notebook* 中加入自己的想法，测试自己想到的程序代码等等，总之只要你想做的都可以做，做完之后保存 *notebook*，你的成果就被记录下来了，然后你可以：
@@ -87,7 +91,7 @@ brew install node
 
 > [https://github.com/neolee/pilot/issues](https://github.com/neolee/pilot/issues)
 
-点击右上的 `New` 按钮来提出问题或者反馈，如果是问题请选择 `question` 这个 *label*，如果是关于教材中的错误或者改进建议可以选择 `bug` 或者 `enhancement` 这样的 *label*。
+点击右上的 `New` 按钮来提出问题或者反馈。
 
 遇到问题的时候其实也可以到这个页面去搜索一下，看看是不是有人提过，得到了怎样的答案；如果没人提过，那就正好可以由你来提出，所有人也都会从中获益。
 

@@ -121,7 +121,7 @@ scoop install python37@3.7.4
 scoop install busybox
 ```
 
-### Scoop 相关排错
+### Scoop 相关疑难
 
 这个过程中如果遇到问题，可以运行 `scoop checkup`，这个命令会让 Scoop 进行自检，给出自己发现的问题和建议解决方案，一般按它说的做就没错，比如在某些系统上它会建议你执行两个命令：
 
@@ -189,7 +189,9 @@ macOS 本质上是 Unix，所以命令行界面是自带现成的，在 macOS �
 
 > 如果曾经从 App Store 下载安装过完整的 Xcode，需要你启动 Xcode 并且完成初始化（安装命令行工具、接受用户授权协议等），看到 Xcode 的欢迎窗口就可以了。
 
-如果上面的命令没有错误，Homebrew 就安装好了，我们建议立刻安装两个软件包，运行：
+### 安装 Python
+
+如果前面的操作没有错误，Homebrew 就安装好了，我们建议立刻安装两个软件包，运行：
 
 ```shell
 brew install git python ↩︎
@@ -200,16 +202,23 @@ brew install git python ↩︎
 
 > 把 GitHub.com 叫“交友社区”是个梗，其实 GitHub 是用于分享和协同开发的在线服务。
 
-> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7.4 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7.4 版本，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
+> 目前 Python 3.8.0 已经正式发布，但 Homebrew 上最新的 python 包仍是 3.7 版本；因为 3.8 太新，还有不少第三方程序没有完全兼容，我们学习仍需要使用 3.7 版本，所以指定 Homebrew 安装 python 包。以后 Homebrew 的 python 包应该会升级到 3.8.x，那时我们也会随之更新这个指引。
 
 上述安装命令运行完毕之后可以运行 `brew list`，应会列出已经安装好的这两个软件包以及所有自动安装的依赖包。我们还可以输入 `python3 -V` 来查看新安装的 Python 的版本。
+
+> 在某些 macOS 系统中会内置一个老的 Python 2.7 的环境，而 `python` 命令会指向这个老的 Python 环境，这会给我们以后的操作带来不少麻烦，可以执行下面的命令来强制让 `python` 指向我们安装的 Python 3 的环境：
+
+```shell
+rm /usr/local/bin/python
+ln -s /usr/local/bin/python3 /usr/local/bin/python
+```
 
 ### 安装 Visual Studio Code
 
 Visual Studio Code 是微软开发并开源的给程序员用的文本编辑器（以下简称 VSCode），VSCode 集成了对各种编程语言和工具的支持，我们写程序代码和文档都可以用它。
 
 * 访问 [Visual Studio Code](https://code.visualstudio.com/) 主页并点击下载按钮，下载时注意看清楚是和自己的操作系统一致（macOS）的版本；
-* 解压下载文件（通常叫 `VSCode-darwin-stable.zip`）会得到 VSCode 应用程序，将其拖到 Applications 目录即可。
+* 解压下载文件（通常叫 `VSCode-darwin-stable.zip`）会得到 VSCode 应用程序，将其移动（拖到） Applications 目录即可。
 
 按 ⌘+空格 键调出 Spotlight，输入 `code` 应该可以看到 Visual Studio Code 出现在第一选项，回车即可运行 VSCode。
 

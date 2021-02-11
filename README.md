@@ -47,7 +47,7 @@
 
 万事开头难，一开始快速清障前进，后面就会越来越顺。
 
-可以使用 GitHub 提供的 Issues 功能来提问，只要访问 [这个页面](https://github.com/neolee/pilot/issues)，点击右上的 `New issue` 绿色按钮即可提出问题，记得选择 `question` 这个 *label*（如果提的是关于课程教材中的错误或者改进建议可以选择 `bug` 或者 `enhancement` 这样的 *label*）。
+可以使用 GitHub 提供的 Issues 功能来提问，只要访问 [这个页面](https://github.com/neolee/pilot/issues)，点击右上的 `New issue` 绿色按钮即可提出问题。
 
 提问是有一些技巧的，经过思考的问题更容易得到靠谱答案。
 
@@ -114,7 +114,7 @@
 
 > [https://github.com/neolee/pilot/issues](https://github.com/neolee/pilot/issues)
 
-点击右上的 `New issue` 绿色按钮来提出问题或者反馈，如果是问题请选择 `question` 这个 *label*，如果是关于教材中的错误或者改进建议可以选择 `bug` 或者 `enhancement` 这样的 *label*。
+点击右上的 `New issue` 绿色按钮来提出问题或者反馈。
 
 遇到问题的时候其实也可以到这个 Issues 页面去搜索一下，看看是不是有人提过，得到了怎样的答案；如果没人提过，那就正好可以由你来提出，所有人都会从中获益。
 
